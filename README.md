@@ -28,9 +28,38 @@ HRIS (Human Resource Information System) adalah aplikasi web dan mobile yang dir
 
 ---
 
-## 🧱 Struktur Proyek
+## 🧱 Diagram Arsitektur
 
 ![alt text](assets/diagram.png)
+
+### 🧩 Fungsi Utama Tiap Komponen
+
+- **User**  
+  ⤷ Mengakses aplikasi melalui browser (HTTP request).
+
+- **Next.js (Frontend)**  
+  ⤷ Menyajikan tampilan antarmuka (UI) ke user dan mengirim permintaan API ke backend.
+
+- **Laravel (Backend)**  
+  ⤷ Mengelola logika bisnis, autentikasi, data user, dan mengatur komunikasi dengan database, storage, dan payment gateway.
+
+- **Azure Virtual Machine (VM)**  
+  ⤷ Menjadi tempat hosting aplikasi frontend dan backend.
+
+- **GitHub + Azure DevOps Pipelines**  
+  ⤷ Digunakan untuk CI/CD: mengelola source code, build otomatis, dan deployment ke VM.
+
+- **PostgreSQL (Azure Database)**  
+  ⤷ Menyimpan seluruh data utama seperti data karyawan, absensi, dan riwayat lembur.
+
+- **Azure Blob Storage**  
+  ⤷ Menyimpan file dokumen seperti surat kerja, sertifikat, dan data berkas lainnya.
+
+- **Azure API Management**  
+  ⤷ Mengelola dan mengamankan API yang digunakan oleh aplikasi.
+
+- **Xendit (Payment Gateway)**  
+  ⤷ Menangani transaksi pembayaran dari user untuk langganan fitur aplikasi.
 
 ---
 
@@ -56,6 +85,9 @@ HRIS (Human Resource Information System) adalah aplikasi web dan mobile yang dir
 | Payment     | [![Xendit](https://img.shields.io/badge/-Xendit-5C2D91?logo=paypal&logoColor=white)](https://www.xendit.co) |
 
 ### 👥 Developer Team
-- Mahasiswa JTI - Polinema
-- Technical Mentoring: PT CMLABS Indonesia Digital
-- Proyek Kolaborasi dalam agenda PBL 2025
+| Nama                            | NIM           |
+|---------------------------------|---------------|
+| Ahmad Faza Alfan Fashlah       | 2241720186    |
+| Mochammad Zakaro Al Fajri     | 2241720175    |
+| Rio Bagas Hermawan       | 2241720193    |
+| Sony Febri Hari Wibowo   | 2241720202    |
