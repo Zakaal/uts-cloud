@@ -30,31 +30,7 @@ HRIS (Human Resource Information System) adalah aplikasi web dan mobile yang dir
 
 ## 🧱 Struktur Proyek
 
-```mermaid
-graph TD
-    A[HRIS Project] --> B[Frontend (Next.js)]
-    A --> C[Backend (Laravel)]
-    A --> D[Mobile App (Flutter)]
-    A --> E[Database (MySQL)]
-    A --> F[Payment Integration (Xendit)]
-
-    B --> B1[Authentication (Login/Register)]
-    B --> B2[Dashboard (Admin/Employee)]
-    B --> B3[Employee Management]
-    B --> B4[Letter Management]
-    B --> B5[Absensi & Check-Clock]
-    B --> B6[Lembur (Over-Time)]
-    B --> B7[Subscription & Pricing]
-
-    C --> C1[REST API]
-    C --> C2[Business Logic]
-    C --> C3[Database Handling]
-
-    D --> D1[Login]
-    D --> D2[View & Edit Employee Data]
-    D --> D3[Mobile Absensi (Face/Fingerprint)]
-    D --> D4[Extra Features]
-```
+![alt text](assets/diagram.png)
 
 ---
 
@@ -67,3 +43,19 @@ graph TD
 - **Lembur (Overtime)**: Pengelolaan dan laporan lembur sesuai kebijakan perusahaan/pemerintah.
 - **Pricing**: Sistem langganan Pay-as-you-go dengan Xendit.
 - **Mobile App**: Versi ringan untuk karyawan yang mendukung absensi dan editing data.
+---
+
+## 🧑‍💻 Developer & Teknologi
+
+| Layer       | Teknologi                                |
+|-------------|-------------------------------------------|
+| Frontend    | [![Next.js](https://img.shields.io/badge/-Next.js-000?logo=next.js&logoColor=white)](https://nextjs.org) |
+| Styling     | [![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com) |
+| Backend     | [![Laravel](https://img.shields.io/badge/-Laravel-F55247?logo=laravel&logoColor=white)](https://laravel.com) |
+| Database    | [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org) |
+| Payment     | [![Xendit](https://img.shields.io/badge/-Xendit-5C2D91?logo=paypal&logoColor=white)](https://www.xendit.co) |
+
+### 👥 Developer Team
+- Mahasiswa JTI - Polinema
+- Technical Mentoring: PT CMLABS Indonesia Digital
+- Proyek Kolaborasi dalam agenda PBL 2025
